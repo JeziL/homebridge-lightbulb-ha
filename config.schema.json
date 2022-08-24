@@ -1,0 +1,35 @@
+{
+  "pluginAlias": "Lightbulb",
+  "pluginType": "accessory",
+  "singular": false,
+  "schema": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "title": "Name",
+        "type": "string",
+        "required": true,
+        "default": "Lightbulb",
+        "description": "The name that will appear in the Home App."
+      },
+      "endpoint": {
+        "title": "HomeAssistant API endpoint",
+        "type": "string",
+        "required": true,
+        "description": "The endpoint of the HomeAssistant RESTful API."
+      },
+      "authToken": {
+        "title": "HomeAssistant token",
+        "type": "string",
+        "required": true,
+        "description": "The token used to access the HomeAssistant RESTful API."
+      },
+      "entityId": {
+        "title": "HomeAssistant entity ID",
+        "type": "string",
+        "required": true,
+        "description": "The entity_id in the HomeAssistant system."
+      }
+    }
+  }
+}
